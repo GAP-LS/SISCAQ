@@ -1,0 +1,22 @@
+{
+	"database": {
+		"ip": "127.0.0.1",
+		"port": 3306,
+		"username": "root",
+		"password": "toor",
+		"database": "SICPAG"
+	},
+	"ldap": {
+		"domain": "ldap://127.0.0.1:389/dc=home,dc=lan",
+		"search": "ou=users",
+		"filter": "(uid=%s)",
+		"server": {
+			"username": "uid=admin,ou=admins,dc=home,dc=lan",
+			"password": "toor"
+		},
+		"user": {
+			"username": "uid=%s,ou=users,dc=home,dc=lan"
+		},
+		"display": ["displayname"]
+	}
+}

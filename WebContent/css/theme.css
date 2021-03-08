@@ -1,0 +1,73 @@
+/* Theme */
+.navbar { margin-bottom: 0; border-radius: 0; }
+.row.content { height: 450px; }
+.sidenav { padding-top: 20px; background-color: #f1f1f1; height: 100%; }
+footer { background-color: #555; color: white; padding: 15px; }
+@media screen and (max-width: 767px) {
+	.sidenav { height: auto; padding: 15px; }
+	.row.content { height: auto; }
+}
+@media print {
+	nav, footer, video, audio, object, embed, .no-print { 
+		display: none; 
+	}
+	body {
+    	-webkit-print-color-adjust: exact;
+    	color-adjust: exact;
+	}
+}
+
+/* Custom theme */
+.hidden { display: none; }
+.text-justify { text-align: justify; }
+.danger { background-color: #faa !important; }
+.warning { background-color: #ffa !important; }
+
+/* Developer */
+.dev-text {
+	color: #f00;
+	font-weight: bold;
+}
+
+/* Scroll bar */
+body { overflow-y: scroll; }
+
+/* Last column table align right */
+th:last-child, td:last-child { text-align: right; }
+
+/* Vertical align: middle */
+td { vertical-align: middle !important; }
+
+/* Scroll table */
+.scroll-x { display: block; overflow-x: scroll; }
+
+/* Rotate 270 degree */
+.rotate {
+	height: 110px;
+	line-height: 125px;
+	text-align: left;
+}
+
+.rotate > div {
+	margin-left: -30px;
+	position: absolute;
+	width: 60px;
+	transform: rotate(-90deg);
+}
+
+/* Black activity pagination */
+.pagination > li.active > a, .pagination > li.active > a:hover { background: #101010; border: 1px solid #101010; }
+
+/* Spinner */
+#spinner {
+	position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+	background-color: rgba(0, 0, 0, 0.9); display: none; z-index: 100000;
+}
+#spinner > #spinnerContainer {
+	position: fixed; top: 50%; left: 50%; width: 250px; height: 250px; margin: -125px;
+	background: #fff url(../img/spinner.gif) no-repeat center center; border-radius: 40px;
+}
+
+/* Checkbox */
+.bs-cb span.glyphicon { opacity: 0; }
+.bs-cb.active span.glyphicon { opacity: 1; }
